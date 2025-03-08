@@ -1,0 +1,42 @@
+.title {
+  margin-top: 8vh;
+  font-size: 20px;
+  text-align: center;
+  color: white;
+  font-size: 28px;
+}
+
+.gateImages {
+  text-align: center;
+
+  img {
+    width: 80vw
+  }
+}
+
+.north, .south {
+  text-align: center;
+}
+
+.westAndEast {
+  display: flex;
+  justify-content: space-between;
+}
+
+.north, .south, .westAndEast {
+  input {
+    width: 40vw;
+    height: 6vh;
+    font-size: 24px;
+    margin-bottom: 12px;
+    text-align: center;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+  }
+}
+
+.playButton {
+  text-align: center;
+  margin-top: 3vh;
+}

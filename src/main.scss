@@ -1,0 +1,74 @@
+* {
+  overflow: hidden;
+}
+
+html {
+  font-family: 'Noto Sans CJK', sans-serif;
+  font-weight: 700;
+  background-color: #449a30;
+  font-size: 24px;
+  border: 12px solid #4B3A29; /* Dark brown border to mimic the wood */
+}
+
+#mahjong-root {
+  max-width: 500px;
+  margin: 0 auto;
+  height: 100vh;
+  padding: 12px;
+}
+
+button {
+  display: inline-block;
+  width: 27vw;
+  height: 40vw;
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  font-family: 'Arial', sans-serif;
+  font-size: 30px;
+  color: blue;
+  line-height: 40px;
+  position: relative;
+  margin: 10px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Added box-shadow for 3D effect */
+  outline: none;
+  user-select: none;
+  font-weight: bold;
+}
+
+button:hover {
+  transform: translateY(-5px);
+}
+
+/* Optional: if you want to add a simple Mahjong tile design, you can include this as a background */
+button:before {
+  font-size: 48px;
+  position: absolute;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+button:disabled {
+  background-color: lightgrey;
+  color: black;
+}
+
+button:active {
+  animation: fallDown 0.3s ease-in-out; /* Animation when button is clicked */
+}
+
+@keyframes fallDown {
+  0% {
+    transform: translateY(0); /* Start at original position */
+  }
+  50% {
+    transform: translateY(10px); /* Fall down a little */
+  }
+  100% {
+    transform: translateY(0); /* Return to original position */
+  }
+}
