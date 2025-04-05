@@ -71,7 +71,7 @@ function ViewResultsButton() {
                   {result.victimName && (
                     <>
                       <br />
-                      và <b>{result.winnerName}</b> là nạn nhân
+                      và <b>{result.victimName}</b> là nạn nhân
                     </>
                   )}
                 </div>
