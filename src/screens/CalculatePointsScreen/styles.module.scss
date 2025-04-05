@@ -1,11 +1,12 @@
 .screenTitle {
   color: white;
   font-size: 40px;
+  margin-top: 24px;
   margin-bottom: 12px;
 }
 
 .screenContent {
-  height: calc(87vh - 115px);
+  height: calc(87vh - 205px);
   overflow-y: auto;
   scrollbar-width: none; /* Firefox */
   -ms-overflow-style: none; /* IE and Edge */

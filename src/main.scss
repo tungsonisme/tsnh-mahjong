@@ -12,10 +12,9 @@ body {
   margin: 0;
   width: 100vw;
   height: 100vh;
-  background-image: url('/src/assets/bg.png');
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
+  overflow: hidden; /* Prevents scroll */
+  position: fixed;   /* Prevents iOS from auto-scrolling */
+  touch-action: none; /* Optional: disables touch scroll */
 }
 
 
@@ -24,6 +23,10 @@ body {
   margin: 0 auto;
   height: 100vh;
   padding: 12px;
+  background-image: url('/src/assets/bg.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 button {
@@ -36,7 +39,6 @@ button {
   font-family: 'Arial', sans-serif;
   font-size: 24px;
   color: blue;
-  line-height: 40px;
   position: relative;
   cursor: pointer;
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Added box-shadow for 3D effect */

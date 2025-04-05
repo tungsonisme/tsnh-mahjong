@@ -26,7 +26,7 @@
 
 .resultsList {
   overflow: auto;
-  height: calc(100vh - 380px);
+  height: calc(100vh - 435px);
 }
 
 .result {
@@ -56,7 +56,7 @@
 
 .finalResults {
   position: absolute;
-  bottom: 90px;
+  bottom: 155px;
   left: 5vw;
   width: 90vw;
   background-color: white;
@@ -74,7 +74,7 @@
 
 .closeButton {
   position: absolute;
-  bottom: 24px;
+  bottom: 100px;
   left: 5vw;
   width: 90vw;
 }
