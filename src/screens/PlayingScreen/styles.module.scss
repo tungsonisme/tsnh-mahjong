@@ -1,0 +1,33 @@
+.title {
+  margin-top: 5vh;
+  text-align: center;
+  font-size: 36px;
+  color: white;
+}
+
+.image {
+  margin-top: 5vh;
+  text-align: center;
+
+  img {
+    width: 80vw
+  }
+}
+
+.button {
+  text-align: center;
+  position: fixed;
+  bottom: 24px;
+  left: 5vw;
+  width: 100vw;
+
+  button {
+    display: block;
+    width: 90vw;
+  }
+
+  .backButton {
+    color: red;
+    margin-bottom: 12px;
+  }
+}

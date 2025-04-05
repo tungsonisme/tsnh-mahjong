@@ -1,9 +1,13 @@
 import { observer } from "mobx-react-lite";
-import LockScreen from "./components/LockScreen";
-import PlayingScreen from "./components/PlayingScreen";
-import SetupPlayersScreen from "./components/SetupPlayersScreen";
-import mahjongStore from "./stores";
-import { MahjongStep } from "./stores/consts";
+import ConfirmModal from "./components/ConfirmModal";
+import ManualButton from "./components/ManualButton";
+import ResetButton from "./components/ResetButton";
+import CalculatePointsScreen from "./screens/CalculatePointsScreen";
+import LockScreen from "./screens/LockScreen";
+import PlayingScreen from "./screens/PlayingScreen";
+import SetupPlayersScreen from "./screens/SetupPlayersScreen";
+import mahjongStore from "./stores/mahjong";
+import { MahjongStep } from "./stores/mahjong/consts";
 
 function App() {
   const screen = (() => {
@@ -19,10 +23,21 @@ function App() {
       return <PlayingScreen />;
     }
 
+    if (mahjongStore.step === MahjongStep.CALCULATE_POINTS) {
+      return <CalculatePointsScreen />;
+    }
+
     return <></>;
   })();
 
-  return screen;
+  return (
+    <>
+      {screen}
+      <ResetButton />
+      <ManualButton />
+      <ConfirmModal />
+    </>
+  );
 }
 
 export default observer(App);

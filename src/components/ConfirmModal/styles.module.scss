@@ -1,0 +1,49 @@
+.modalOverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.confirmModal {
+  position: fixed;
+  top: 30vh;
+  left: 5vw;
+  width: calc(90vw - 48px);
+  background: white;
+  border-radius: 10px;
+  padding: 24px;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.5);
+}
+
+.confirmModalTitle {
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 16px;
+}
+
+.confirmModalContent {
+  font-size: 16px;
+  background-color: white;
+  border-radius: 10px;
+  font-weight: 400;
+}
+
+.confirmModalButtons {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 24px;
+}
+
+.confirmModalButton {
+  width: unset;
+  height: unset;
+  font-size: 16px;
+  border: 1px solid #000;
+  border-radius: 5px;
+  padding: 8px 16px;
+  width: 48%;
+  box-shadow: unset;
+}

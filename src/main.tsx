@@ -1,7 +1,7 @@
 import { StrictMode } from "react";
 import { createRoot } from "react-dom/client";
 import "./main.scss";
-import App from "./App.tsx";
+import App from "./App";
 
 const mahjongRoot = document.getElementById("mahjong-root");
 

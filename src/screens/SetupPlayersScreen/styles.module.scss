@@ -1,0 +1,44 @@
+.gateImages {
+  text-align: center;
+  margin-top: 2vh;
+  margin-bottom: 5vh;
+
+  img {
+    width: 90vw
+  }
+}
+
+.north, .south {
+  text-align: center;
+}
+
+.westAndEast {
+  display: flex;
+  justify-content: space-between;
+}
+
+.north, .south, .westAndEast {
+  input {
+    width: 40vw;
+    height: 6vh;
+    font-size: 24px;
+    margin-bottom: 12px;
+    text-align: center;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+  }
+}
+
+.buttons {
+  text-align: center;
+  position: fixed;
+  bottom: 24px;
+  left: 0;
+  width: 100vw;
+  
+  button {
+    width: 90vw;
+    color: blue;
+  }
+}

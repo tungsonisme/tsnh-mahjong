@@ -1,0 +1,34 @@
+.title {
+  text-align: center;
+  margin-top: 15vh;
+  font-size: 32px;
+  color: white;
+}
+
+.passcodeContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.passcodeInputs {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.passcodeInput {
+  width: 60px;
+  height: 60px;
+  font-size: 24px;
+  text-align: center;
+  border: 2px solid #ccc;
+  border-radius: 10px;
+  outline: none;
+}
+
+.passcodeInput:focus {
+  border-color: #007bff;
+}
